@@ -1,0 +1,22 @@
+.but{
+    background-color: white;
+    border: none;
+}
+
+.btn-2{
+    opacity: 0;
+}
+
+.animate{
+   
+    animation: opacity 2s;
+}
+
+@keyframes opacity {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

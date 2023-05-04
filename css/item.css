@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+#floatingSelect{
+  border: none;
+  padding-top: 2px;
+}
+
+.card-body{
+  padding:0;
+  flex: 0;
+}
+
+
+.animate{
+   animation: opacity 2s;
+}
+
+@keyframes opacity {
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+}
