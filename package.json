@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "serve": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "build": "echo 'No build step required for plain JavaScript app.'",
+    "test": "mocha --timeout 5000 --exit test/*.test.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +25,7 @@
     "stripe": "^8.193.0"
   },
   "devDependencies": {
+    "mocha": "^8.4.0",
     "nodemon": "^2.0.14"
   }
 }
