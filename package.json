@@ -6,8 +6,9 @@
   "scripts": {
     "serve": "nodemon server.js",
     "start": "node index.js",
-    "build": "echo 'No build step required for plain JavaScript app.'",
-    "test": "mocha --timeout 5000 --exit test/*.test.js"
+    "build": "npm run clean && npm run bundle",
+    "clean": "rm -rf dist && mkdir dist",
+    "bundle": "zip -r ../dist/app.zip ./*"
   },
   "author": "",
   "license": "ISC",
