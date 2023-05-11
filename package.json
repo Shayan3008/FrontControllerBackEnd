@@ -6,9 +6,7 @@
   "scripts": {
     "serve": "nodemon server.js",
     "start": "node index.js",
-    "build": "npm run clean && npm run bundle",
-    "clean": "rm -rf dist && mkdir dist",
-    "bundle": "zip -r ../dist/app.zip ./*"
+    "build": "npm run clean && npm run bundle"
   },
   "author": "",
   "license": "ISC",
